@@ -1,0 +1,88 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  background: linear-gradient(135deg, #FFC0CB, #FFDAB9);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  text-align: center;
+  animation: fadeIn 2s ease-in;
+  color: #FF6F91;
+}
+
+p {
+  line-height: 1.6;
+  margin: 20px auto;
+  width: 80%;
+  text-align: justify;
+  color: #333;
+}
+
+/* Header */
+.header {
+  font-size: 20px;
+  background-color: #FFC0CB;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #FF6F91;
+}
+
+.home,
+.about,
+.words {
+  padding: 50px;
+  text-align: center;
+}
+
+.about {
+  background-color: #FFDAB9;
+}
+
+.words li {
+  list-style: none;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  animation: fadeInUp 1.2s ease-out;
+  color: #FF6F91;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
